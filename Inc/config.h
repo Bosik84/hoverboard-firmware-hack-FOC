@@ -540,10 +540,10 @@
   #define MULTI_MODE_DRIVE                  // This option enables the selection of 3 driving modes at start-up using combinations of Brake and Throttle pedals (see below)
   #ifdef MULTI_MODE_DRIVE
       // BEGINNER MODE:     Power ON + Brake [released] + Throttle [released or pressed]
-      #define MULTI_MODE_DRIVE_M1_MAX   175
-      #define MULTI_MODE_DRIVE_M1_RATE  250
-      #define MULTI_MODE_M1_I_MOT_MAX   4
-      #define MULTI_MODE_M1_N_MOT_MAX   30
+      #define MULTI_MODE_DRIVE_M1_MAX   300
+      #define MULTI_MODE_DRIVE_M1_RATE  270
+      #define MULTI_MODE_M1_I_MOT_MAX   7
+      #define MULTI_MODE_M1_N_MOT_MAX   70
 
       // INTERMEDIATE MODE: Power ON + Brake [pressed] + Throttle [released]
       #define MULTI_MODE_DRIVE_M2_MAX   500
@@ -551,11 +551,15 @@
       #define MULTI_MODE_M2_I_MOT_MAX   8
       #define MULTI_MODE_M2_N_MOT_MAX   80
 
-      // ADVANCED MODE:    Power ON + Brake [pressed] + Throttle [pressed]
-      #define MULTI_MODE_DRIVE_M3_MAX   1000
-      #define MULTI_MODE_DRIVE_M3_RATE  450
-      #define MULTI_MODE_M3_I_MOT_MAX   I_MOT_MAX
-      #define MULTI_MODE_M3_N_MOT_MAX   N_MOT_MAX
+     // ADVANCED MODE:    Power ON + Brake [pressed] + Throttle [pressed]
+      #define MULTI_MODE_DRIVE_M3_MAX   700
+      #define MULTI_MODE_DRIVE_M3_RATE  400
+      #define MULTI_MODE_M3_I_MOT_MAX   9
+      #define MULTI_MODE_M3_N_MOT_MAX   100
+     // #define MULTI_MODE_DRIVE_M3_MAX   1000
+     // #define MULTI_MODE_DRIVE_M3_RATE  450
+     // #define MULTI_MODE_M3_I_MOT_MAX   I_MOT_MAX
+    //  #define MULTI_MODE_M3_N_MOT_MAX   N_MOT_MAX
   #endif
 
 #endif
